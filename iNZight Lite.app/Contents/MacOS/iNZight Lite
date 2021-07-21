@@ -2,5 +2,5 @@
 
 defaults write org.R-project.R NSAppSleepDisabled -bool YES
 
-export APPDIR="/Applications/iNZight Lite"
+export APPDIR="/Applications/iNZight\ Lite"
 open -a R "$APPDIR"
