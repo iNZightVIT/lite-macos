@@ -6,3 +6,5 @@ export APPDIR=$(cd "$(dirname "$0")"; cd ../..; pwd -P)
 echo $APPDIR
 
 open -a R "$APPDIR"
+
+osascript -e 'tell application \"System Events\" to set visible of application process \"R\" to false'
