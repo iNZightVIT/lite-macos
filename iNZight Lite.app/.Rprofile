@@ -24,4 +24,6 @@ if (any(!inst)) {
     install.packages(deps, repos = "https://cran.rstudio.com", lib = lib)
 }
 
+system("osascript -e 'tell application \"System Events\" to set visible of application process \"R\" to false'")
+
 shiny::runApp("Contents/Resources/Lite")
